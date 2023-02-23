@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-'''Python script to export data in the JSON format'''
+'''JSON export'''
 
 import json
 import requests
@@ -26,5 +26,4 @@ if __name__ == '__main__':
         json.dump({user_id: [{"task": task["title"],
                               "completed": task["completed"],
                               "username": user_info["username"]}
-                             for task in todos_info]}, jsonfile)
-                             
+                             for task in todos_info]}, jsonfile) 

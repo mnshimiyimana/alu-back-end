@@ -1,5 +1,6 @@
-#!/usr/bin/python
-'''Python script to export data in the CSV format'''
+#!/usr/bin/python3
+
+'''CSV export'''
 
 import csv
 import requests
@@ -26,4 +27,3 @@ if __name__ == '__main__':
         [csvwriter.writerow([user_id, user_info["username"],
                              task["completed"], task["title"]])
          for task in todos_info]
-         

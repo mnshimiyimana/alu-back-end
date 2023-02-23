@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script returns information about a TODO list progress"""
+"""Module"""
 
 import requests
 import sys
@@ -27,4 +27,3 @@ if __name__ == '__main__':
           format(employee_name, number_of_done_tasks, total_number_of_tasks))
 
     [print("\t " + task["title"]) for task in task_completed]
-    

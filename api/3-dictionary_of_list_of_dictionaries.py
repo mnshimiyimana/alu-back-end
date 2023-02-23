@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script to export data in the JSON format"""
+"""Module"""
 
 import json
 import requests
@@ -39,5 +39,4 @@ if __name__ == '__main__':
         all_users = {}
         for employee_id in employee_ids:
             all_users[str(employee_id)] = get_employee_task(employee_id)
-        file.write(json.dumps(all_users))
-        
+        file.write(json.dumps(all_users))  
