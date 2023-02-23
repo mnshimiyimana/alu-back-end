@@ -26,4 +26,4 @@ if __name__ == '__main__':
         json.dump({user_id: [{"task": task["title"],
                               "completed": task["completed"],
                               "username": user_info["username"]}
-                             for task in todos_info]}, jsonfile) 
+                             for task in todos_info]}, jsonfile)
